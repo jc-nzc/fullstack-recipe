@@ -21,4 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Commands List:
+* Database: rake db:create,rake db:migrate, rake db:seed, 
+* Frontend: npx create-react-app client, yarn start
+* Backend: rails s -p 3001, rails g scaffold
