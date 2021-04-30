@@ -774,3 +774,17 @@ Processing by Api::V1::ListsController#index as JSON
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 855)
 
 
+Started GET "/api/v1/lists.json" for 127.0.0.1 at 2021-04-27 20:52:25 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 11.3ms | Allocations: 2907)
+
+
+Started GET "/api/v1/lists.json" for 127.0.0.1 at 2021-04-27 20:52:49 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 855)
+
+
