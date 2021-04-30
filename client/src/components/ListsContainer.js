@@ -110,6 +110,7 @@ class ListsContainer extends Component {
                     {this.state.lists.map( list => {
                         return (<List list={list} key={list.id} />)
                     })}
+                    <NewListForm onNewList={this.addNewList} />
                 </div>
             )
         }
