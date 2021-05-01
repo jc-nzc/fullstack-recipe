@@ -45,7 +45,7 @@ module Api::V1
         @item = Item.find(params[:id])
       end
 
-      # Only allow a list of trusted parameters through.
+      # Only allow a trusted parameter "white list" through.
       def item_params
         params.require(:item).permit(:type, :name, :excerpt, :description, :url, :upvotes)
       end

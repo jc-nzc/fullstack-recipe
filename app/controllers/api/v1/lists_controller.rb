@@ -15,16 +15,6 @@ module Api::V1
     end
 
     # POST /lists
-    # def create
-    #   @list = List.new(list_params)
-    #
-    #   if @list.save
-    #     render json: @list, status: :created, location: @list
-    #   else
-    #     render json: @list.errors, status: :unprocessable_entity
-    #   end
-    # end
-    # POST /lists
     def create
       @list = List.new(list_params)
 
@@ -46,7 +36,11 @@ module Api::V1
 
     # DELETE /lists/1
     def destroy
-      @list.destroy
+      if @list.destroy
+        head :no_content, status: :ok
+      else
+        render json: @list.errors, status: :unprocessable_entity
+      end
     end
 
     private
@@ -55,7 +49,7 @@ module Api::V1
         @list = List.find(params[:id])
       end
 
-      # Only allow a list of trusted parameters through.
+      # Only allow a trusted parameter "white list" through.
       def list_params
         params.require(:list).permit(:title, :excerpt, :description, :upvotes)
       end
