@@ -1045,3 +1045,289 @@ Processing by Api::V1::ListsController#index as JSON
 Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 957)
 
 
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:22:52 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 957)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:23:37 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.8ms | Allocations: 957)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:27:34 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 957)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:28:01 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.7ms | Allocations: 957)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:28:02 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 957)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:28:03 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 957)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:28:49 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 957)
+
+
+Started POST "/api/v1/lists" for 127.0.0.1 at 2021-05-01 00:29:45 -0500
+Processing by Api::V1::ListsController#create as HTML
+  Parameters: {"list"=>{"title"=>"At The Gate of Eternity", "excerpt"=>"Hiding in Daylight"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:21:in `create'
+  [1m[36mList Create (1.1ms)[0m  [1m[32mINSERT INTO "lists" ("title", "excerpt", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "At The Gate of Eternity"], ["excerpt", "Hiding in Daylight"], ["created_at", "2021-05-01 05:29:45.926065"], ["updated_at", "2021-05-01 05:29:45.926065"]]
+  ↳ app/controllers/api/v1/lists_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:21:in `create'
+Completed 201 Created in 8ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 2183)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:29:52 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:30:18 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 31ms (Views: 7.2ms | ActiveRecord: 8.5ms | Allocations: 10583)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:30:20 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.8ms | Allocations: 1099)
+
+
+Started GET "/api/v1/lists" for ::1 at 2021-05-01 00:30:22 -0500
+Processing by Api::V1::ListsController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 1078)
+
+
+Started GET "/api/v1/lists" for ::1 at 2021-05-01 00:30:24 -0500
+Processing by Api::V1::ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1061)
+
+
+Started GET "/api/v1/lists" for ::1 at 2021-05-01 00:30:25 -0500
+Processing by Api::V1::ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1061)
+
+
+Started GET "/api/v1/lists" for ::1 at 2021-05-01 00:30:25 -0500
+Processing by Api::V1::ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1078)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:25 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1076)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:36 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:38 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:38 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:39 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:39 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.6ms | Allocations: 1061)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:40 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.6ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:40 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:41 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:32:48 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:41:19 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 15.0ms | Allocations: 3257)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:41:38 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:44:19 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:01 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:05 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1060)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:16 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:21 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:37 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:38 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.8ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:43 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:43 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:43 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists.json" for ::1 at 2021-05-01 00:46:43 -0500
+Processing by Api::V1::ListsController#index as JSON
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 1059)
+
+
+Started GET "/api/v1/lists" for 127.0.0.1 at 2021-05-01 00:52:23 -0500
+Processing by Api::V1::ListsController#index as HTML
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 18.2ms | ActiveRecord: 8.4ms | Allocations: 3114)
+
+
+Started GET "/api/v1/lists" for 127.0.0.1 at 2021-05-01 00:52:28 -0500
+Processing by Api::V1::ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1061)
+
+
