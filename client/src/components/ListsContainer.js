@@ -39,7 +39,6 @@ class ListsContainer extends Component {
             console.log(error)
         })
     }
-
     removeList(id) {
         axios.delete( '/api/v1/lists/' + id )
         .then(response => {
@@ -50,13 +49,11 @@ class ListsContainer extends Component {
         })
         .catch(error => console.log(error))
     }
-
     editingList(id) {
         this.setState({
             editingListId: id
         })
     }
-
     editList(id, title, excerpt) {
         axios.put( '/api/v1/lists/' + id, {
             list: {
@@ -75,6 +72,14 @@ class ListsContainer extends Component {
         })
         .catch(error => console.log(error));
     }
+
+    // Code Below Is For Heroku Deployment
+    // apiEndPoint(){
+    //   if (process.env.NODE_ENV !== 'production') {
+    //       return 'http://localhost:3001/api/v1/lists.json'
+    //   }
+    //   return 'https://mysterious-tundra-13244.herokuapp.com/api/v1/lists.json'
+    // }
 
     render() {
         return (
